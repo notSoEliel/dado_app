@@ -1,0 +1,11 @@
+# MacOS
+.DS_Store
+
+# Archivos temporales
+*.log
+*.tmp
+notes.txt
+
+# Configuración de editores
+.idea/
+.vscode/
