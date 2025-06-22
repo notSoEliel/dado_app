@@ -9,3 +9,5 @@ notes.txt
 # Configuración de editores
 .idea/
 .vscode/
+
+.mypy_cache/
