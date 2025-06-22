@@ -1,0 +1,6 @@
+[submodule "dado_app_backend"]
+	path = dado_app_backend
+	url = https://github.com/notSoEliel/dado_app_backend.git
+[submodule "dado_app_fluttter"]
+	path = dado_app_fluttter
+	url = https://github.com/notSoEliel/dado_app_fluttter.git
