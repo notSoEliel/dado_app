@@ -38,14 +38,14 @@ Este proyecto es una combinación de frontend en Flutter y backend en FastAPI, d
 
 ```markdown
 dado_app/
-├── backend/           # FastAPI
+├── dado_app_backend/           # FastAPI
 │   ├── main.py
 │   ├── models.py
 │   ├── database.py
 │   ├── crud.py
 │   └── seed.py
 │
-├── flutter_app/       # Flutter
+├── dado_app_fluttter/       # Flutter
 │   ├── lib/
 │   │   ├── main.dart
 │   │   └── screens/
@@ -63,6 +63,7 @@ dado_app/
 ### 1. Instalar dependencias:
 
 ```bash
+cd dado_app_backend
 pip install uv
 uv sync
 ```
@@ -83,7 +84,7 @@ uv run uvicorn main:app --reload
 ### Frontend (Flutter)
 
 ```bash
-cd flutter_app
+cd dado_app_fluttter
 flutter pub get
 flutter run
 ```
