@@ -98,7 +98,7 @@ flutter run
 Este proyecto utiliza **submódulos de Git** para separar el código del backend y del frontend. Para asegurarte de tener acceso completo a todo el código, clónalo usando el siguiente comando:
 
 ```bash
-git clone --recurse-submodules https://github.com/tu_usuario/dado_app.git
+git clone --recurse-submodules https://github.com/notSoEliel/dado_app.git
 ```
 
 Si ya lo clonaste sin esa opción, puedes inicializar los submódulos manualmente:
