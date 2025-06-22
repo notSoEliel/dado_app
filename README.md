@@ -1,3 +1,6 @@
+⚠️ **Importante**: Este proyecto utiliza submódulos de Git para separar el frontend (Flutter) y el backend (FastAPI).  
+Después de clonar este repositorio, asegúrate de seguir las instrucciones más abajo para inicializar correctamente los submódulos.
+
 # Dado App - Sistema de Login y Registro de Puntos (Flutter + FastAPI)
 
 Este proyecto es una combinación de frontend en Flutter y backend en FastAPI, diseñado como una aplicación sencilla pero funcional que permite a los usuarios autenticarse (sin registro), lanzar un dado y administrar puntos que se actualizan automáticamente desde el servidor.
@@ -86,3 +89,22 @@ flutter run
 ```
 
 ⚠️ Usa `10.0.2.2` en lugar de `localhost` si corres Flutter en emulador Android.
+
+---
+
+## 🧰 Cómo clonar este repositorio correctamente
+
+Este proyecto utiliza **submódulos de Git** para separar el código del backend y del frontend. Para asegurarte de tener acceso completo a todo el código, clónalo usando el siguiente comando:
+
+```bash
+git clone --recurse-submodules https://github.com/tu_usuario/dado_app.git
+```
+
+Si ya lo clonaste sin esa opción, puedes inicializar los submódulos manualmente:
+
+```bash
+git submodule init
+git submodule update
+```
+
+Una vez hecho esto, puedes seguir las instrucciones anteriores para levantar el backend y el frontend por separado.
