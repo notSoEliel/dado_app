@@ -56,11 +56,45 @@ dado_app/
 
 ---
 
+## 🧰 Cómo clonar y actualizar este repositorio correctamente
+
+Este proyecto utiliza **submódulos de Git** para separar el código del backend y del frontend.
+
+### Clonar el repositorio con submódulos (recomendado):
+
+```bash
+git clone --recurse-submodules https://github.com/notSoEliel/dado_app.git
+```
+
+### Actualizar el repositorio y submódulos (pull):
+
+```bash
+git pull --recurse-submodules
+```
+
+### Si ya clonaste o hiciste pull sin la opción de submódulos:
+
+Inicializa y actualiza los submódulos manualmente (recomendado):
+
+```bash
+git submodule update --init --recursive
+```
+
+
+
+---
+
 ## 🚀 Cómo Iniciar
+
+Asegúrate de estar en la carpeta raíz del proyecto antes de ejecutar cualquier comando:
+
+```bash
+cd dado_app
+```
 
 ### Backend
 
-### 1. Instalar dependencias:
+1. Instalar dependencias:
 
 ```bash
 cd dado_app_backend
@@ -68,18 +102,17 @@ pip install uv
 uv sync
 ```
 
-### 2. Crear la base de datos y precargar usuarios:
+2. Crear la base de datos y precargar usuarios:
 
 ```bash
 uv run seed.py
 ```
 
-### 3. Ejecutar el servidor:
+3. Ejecutar el servidor:
 
 ```bash
 uv run uvicorn main:app --reload
 ```
-
 
 ### Frontend (Flutter)
 
@@ -90,22 +123,3 @@ flutter run
 ```
 
 ⚠️ Usa `10.0.2.2` en lugar de `localhost` si corres Flutter en emulador Android.
-
----
-
-## 🧰 Cómo clonar este repositorio correctamente
-
-Este proyecto utiliza **submódulos de Git** para separar el código del backend y del frontend. Para asegurarte de tener acceso completo a todo el código, clónalo usando el siguiente comando:
-
-```bash
-git clone --recurse-submodules https://github.com/notSoEliel/dado_app.git
-```
-
-Si ya lo clonaste sin esa opción, puedes inicializar los submódulos manualmente:
-
-```bash
-git submodule init
-git submodule update
-```
-
-Una vez hecho esto, puedes seguir las instrucciones anteriores para levantar el backend y el frontend por separado.
